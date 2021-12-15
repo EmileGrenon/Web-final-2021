@@ -1,0 +1,163 @@
+header > nav
+{
+	width:100vw;
+	height:100px;
+	background-color:DodgerBlue;
+	grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+	display:grid;
+	position:absolute;
+	border: 2px solid black;
+}
+nav h1
+{
+	text-align:center;
+}
+.link
+{
+	text-decoration:none;
+	color:black;
+}
+.link:hover
+{
+	color: white;
+	text-decoration:underline;
+}
+footer
+{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-65vh;
+}
+main
+{
+	position:absolute;
+	top:100px;
+	width:100vw;
+	height:150vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr 1fr;
+	display:grid;
+}
+
+main > div
+{
+	text-align:center;
+	border: 2px solid black;
+}
+.info
+{
+	text-align: left;
+}
+img
+{
+	width:80%;
+	margin:10px;
+	border:5px solid white;
+}
+img+div
+{
+	text-align:center
+}
+#menu
+{
+	display:none;
+}
+div > ul > li:hover #menu
+{
+	display: block;
+}
+.source
+{
+	color: white;
+}
+.titre
+{
+	text-align: center;
+}
+table
+{
+	position: relative;
+	left:10%;
+	width:80%;
+	border: 2px solid black;
+}
+td
+{
+	border: 2px solid black;
+	margin: 10px;
+}
+@media screen and (max-width: 1000px)
+{
+	main
+	{
+	position:absolute;
+	top:100px;
+	width:100vw;
+	height:200vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr;
+	}
+	.none
+	{
+		display:none;
+	}
+	footer
+	{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-120vh;
+	}
+}
+@media screen and (max-width:800px)
+{
+	table
+	{
+		display:none;
+	}
+	.titre
+	{
+		display:none;
+	}
+	header > nav
+	{
+	width:100vw;
+	height:160px;
+	background-color:DodgerBlue;
+	grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+	display:grid;
+	position:absolute;
+	border: 2px solid black;
+	}
+	main
+	{
+	position:absolute;
+	top:125px;
+	width:100vw;
+	height:350vh;
+	background-color:DarkGray;
+	grid-template-columns: 1fr 2fr;
+	}
+	.none
+	{
+		display: none;
+	}
+	footer
+	{
+	background-color:DodgerBlue;
+	color: black;
+	position: absolute;
+	width: 100vw;
+	border: 2px solid black;
+	bottom:-270vh;
+	}
+}
+span
+{
+	color: white;
+}
